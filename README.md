@@ -13,25 +13,30 @@ Made using python 2.7
 # Example usage
 
 * List all contacts:
+
   ```curl http://localhost:5000/contacts
 ```
 
 * Add contact:
+
   ```curl -u fakeuser:web -H "Content-Type: application/json" -X POST -d '{"first_name":"Rudolph", "last_name":"DeReindeer", "email":"rudolph@brightnose.com"}' http://localhost:5000/contacts
 ```
 
 * Look up a specific contact by contact id
-```curl http://localhost:5000/contacts/1
+
+  ```curl http://localhost:5000/contacts/1
 ```
 
 * Delete contact
-```curl -u fakeuser:web -H "Content-Type: application/json" -X DELETE http://localhost:5000/contacts/2
+
+  ```curl -u fakeuser:web -H "Content-Type: application/json" -X DELETE http://localhost:5000/contacts/2
 ```
 
 * Update contact
-```curl -u fakeuser:web -H "Content-Type: application/json" -X PUT -d '{"first_name":"Mister", "last_name":"Grinch", "email":"mister.grinch@istolechristmas.com"}' http://localhost:5000/contacts/3
+
+  ```curl -u fakeuser:web -H "Content-Type: application/json" -X PUT -d '{"first_name":"Mister", "last_name":"Grinch", "email":"mister.grinch@istolechristmas.com"}' http://localhost:5000/contacts/3
 ```
-___
+
 
 # Possible Updates:
 
