@@ -30,9 +30,9 @@ Contacts have the following pieces of information:
 
   ```curl -u fakeuser:web -H "Content-Type: application/json" -X POST -d '{"first_name":"Rudolph", "last_name":"DeReindeer", "email":"rudolph@brightnose.com"}' http://localhost:5000/contacts```
 
-* Look up a specific contact by contact id
+* Search for a specific contact by last name
 
-  ```curl http://localhost:5000/contacts/1```
+  ```curl http://localhost:5000/contacts/Bunny```
 
 * Delete contact
 
@@ -45,5 +45,6 @@ Contacts have the following pieces of information:
 
 # Possible Updates:
 
-* Store epoch time but display user-friendly time when appropriate (currently only showing user-friendly values)
-* Find a better solution for logging user modified so I don't need person_modifying = user_modified() in so many places
+* Store epoch time but display user-friendly time when appropriate (currently only showing user-friendly values).
+* Be able to search by any value from the list of dicts from a single endpoint.
+* Find a better solution for logging user modified so I don't need person_modifying = user_modified() in so many places.

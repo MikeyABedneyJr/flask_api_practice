@@ -76,10 +76,10 @@ def MakePublicContact(contact):
 def GetAllContacts(): 
     return jsonify({'contacts': [MakePublicContact(contact) for contact in contacts]}) 
 
-# Filter by specific contact id
-@app.route('/contacts/<int:contact_id>', methods=['GET'])
-def GetContact(contact_id): 
-    contact = [contact for contact in contacts if contact['id'] == contact_id]
+# Filter contacts by last name
+@app.route('/contacts/<string:contact_last_name>', methods=['GET']) 
+def SearchAllContacts(contact_last_name):
+    contact = [contact for contact in contacts if contact['last_name'] == contact_last_name]
     if len(contact) == 0: 
         abort(404) 
     return jsonify({'contact': contact[0]}) 
