@@ -30,7 +30,7 @@ Contacts have the following pieces of information:
 
   ```curl -u fakeuser:web -H "Content-Type: application/json" -X POST -d '{"first_name":"Rudolph", "last_name":"DeReindeer", "email":"rudolph@brightnose.com"}' http://localhost:5000/contacts```
 
-* Search for a specific contact by last name
+* Search for a specific contact by `last_name`
 
   ```curl http://localhost:5000/contacts/Bunny```
 
