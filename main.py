@@ -39,23 +39,23 @@ def NotFoundError(error):
 contacts = [ 
     { 
         'id': 1, 
-        'first_name': u'Easter', 
-        'last_name': u'Bunny', 
-        'email': u'easter.bunny@alltheeggs.com', 
+        'first_name': 'Easter', 
+        'last_name': 'Bunny', 
+        'email': 'easter.bunny@alltheeggs.com', 
         'last_modified': 'None', 
     }, 
     { 
         'id': 2, 
-        'first_name': u'Tooth', 
-        'last_name': u'Fairy', 
-        'email': u'tooth.fairy@newsmiles.com', 
+        'first_name': 'Tooth', 
+        'last_name': 'Fairy', 
+        'email': 'tooth.fairy@newsmiles.com', 
         'last_modified': 'None', 
     }, 
     { 
         'id': 3, 
-        'first_name': u'Santa', 
-        'last_name': u'Claus', 
-        'email': u'santa.claus@hohoho.com', 
+        'first_name': 'Santa', 
+        'last_name': 'Claus', 
+        'email': 'santa.claus@hohoho.com', 
         'last_modified': 'None', 
     } 
 ] 
